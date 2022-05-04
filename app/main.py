@@ -10,10 +10,10 @@ while True:
 
     if option_selected == 1:
         print(line())
-        print(f'\n{readArchive()}\n')
+        print(f'\n{read_archive()}\n')
     elif option_selected == 2:
         print(line())
-        print(f'\n{modifyArchive()}\n')
+        print(f'\n{modify_archive()}\n')
     elif option_selected == 3:
         print('\033[1;32m\n---- OBRIGADO POR USAR O PROGRAMA ----\n\033[m')
         break
