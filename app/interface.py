@@ -14,3 +14,7 @@ def menu():
     print('\033[1;33m 2 - Adicionar Pessoa \033[m')
     print('\033[1;33m 3 - Fechar Programa \033[m')
     print(line())
+
+
+def menu_person():
+    return (f'{"NOME"} {"IDADE":>30}')
