@@ -17,4 +17,6 @@ def menu():
 
 
 def menu_person():
-    return (f'{"NOME"} {"IDADE":>30}')
+    print(line())
+    print(f'{"NOME":^10} {"IDADE":^40}')
+    print(line())

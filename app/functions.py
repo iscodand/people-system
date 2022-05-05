@@ -5,10 +5,11 @@ archive = 'app/data.txt'
 
 def read_archive():
 
+    menu_person()
+
     try:
         with open(archive, 'r') as open_archive:
-            for lines in open_archive:
-                return lines
+            return open_archive.read()
 
     except Exception as e:
         print(f'\033[1;31m---- {e} ----\033[m')
@@ -16,12 +17,14 @@ def read_archive():
 
 def modify_archive():
 
-    read_archive()
+    global name, age
+
+    print(line())
 
     try:
         with open(archive, 'a+') as open_archive:
-            name = open_archive.writelines(str(input('Nome: ')).capitalize())
-            age = open_archive.writelines(str(input('Idade: ')))
+            name = open_archive.writelines(str(input('Nome: ')).upper() + f'{" ">10}')
+            age = open_archive.writelines(str(input('Idade: ')) + '\n')
             
     except Exception as e:
         print(f'\033[1;31m---- {e} ----\033[m')
